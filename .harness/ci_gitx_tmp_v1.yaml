@@ -29,3 +29,4 @@ template:
                     spec:
                       shell: Sh
                       command: pwd
+                    description: <+input>
