@@ -1,0 +1,29 @@
+pipeline:
+  name: ci_gitx
+  identifier: ci_gitx
+  projectIdentifier: CIrepro
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test5
+        identifier: test5
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: false
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: pwd
