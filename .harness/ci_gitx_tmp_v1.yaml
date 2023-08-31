@@ -30,3 +30,9 @@ template:
                       shell: Sh
                       command: pwd
                     description: <+input>
+          variables:
+            - name: test_var
+              type: String
+              description: ""
+              required: false
+              value: "20"
