@@ -1,0 +1,9 @@
+pipeline:
+  name: ci_gitx
+  identifier: ci_gitx
+  template:
+    templateRef: ci_gitx_tmp
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: CIrepro
+  orgIdentifier: default
