@@ -4,6 +4,18 @@ pipeline:
   template:
     templateRef: ci_gitx_tmp
     versionLabel: v1
+    templateInputs:
+      stages:
+        - stage:
+            identifier: test5
+            type: CI
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: Run_1
+                      type: Run
+                      description: <+input>
   tags: {}
   projectIdentifier: CIrepro
   orgIdentifier: default
